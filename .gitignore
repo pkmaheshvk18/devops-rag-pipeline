@@ -1,0 +1,34 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+
+# Tests and logs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Generated vector database and local data
+chroma_db/
+vector_db/
+data/processed/
+EOF
